@@ -1,0 +1,138 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size:  cover;
+  object-fit: fill;
+  padding: 0px;
+  margin: 0px;
+}
+
+.main-screen-background {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  z-index: -2;
+  display: block;
+}
+
+.company-logo {
+  background-image: url('../img/companylogo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 42.5vw;
+  top: 2vh;
+  width: 15vw;
+  height: 47vh;
+}
+
+.btn-theme-1 {
+  background-image: url('../img/button-1.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 1vw;
+  top: 2vh;
+  width: 41vw;
+  height: calc(47vh - 75px);
+  background-position: center;
+}
+
+.btn-theme-2 {
+  background-image: url('../img/button-2.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 58vw;
+  top: 2vh;
+  width: 41vw;
+  height: calc(47vh - 75px);
+  background-position: center;
+}
+
+.btn-theme-3 {
+  background-image: url('../img/button-3.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 1vw;
+  top: 51vh;
+  width: 41vw;
+  height: calc(47vh - 75px);
+  background-position: center;
+}
+
+.btn-theme-4 {
+  background-image: url('../img/button-4.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 58vw;
+  top: 51vh;
+  width: 41vw;
+  height: calc(47vh - 75px);
+  background-position: center;
+}
+
+.text-theme-1 {
+  position: absolute;    
+  left: 1vw;
+  top: calc(49vh - 75px);
+  width: 41vw;
+  height: 75px;
+  text-align: center;
+  font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+  text-shadow: black 1px 2px;
+}
+
+.text-theme-2 {
+  position: absolute;
+  left: 58vw;
+  top: calc(49vh - 75px);
+  width: 41vw;
+  height: 75px;
+  text-align: center;
+  font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+  text-shadow: black 1px 2px;
+}
+
+.text-theme-3 {
+  position: absolute;
+  left: 1vw;
+  top: calc(98vh - 75px);
+  width: 41vw;
+  height: 75px;
+  text-align: center;
+  font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+  text-shadow: black 1px 2px;
+}
+
+.text-theme-4 {
+  position: absolute;
+  left: 58vw;
+  top: calc(98vh - 75px);
+  width: 41vw;
+  height: 75px;
+  text-align: center;
+  font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+  text-shadow: black 0 0 7px;
+}

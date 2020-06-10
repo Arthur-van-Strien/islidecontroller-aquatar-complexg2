@@ -1,0 +1,20 @@
+{
+	"service": "SFTP",
+	"SFTP": {
+		"timeZoneOffset": 0,
+		"testCollisionTimeDiffs": true,
+		"collisionUploadAction": "override all",
+		"collisionDownloadAction": null,
+		"host": "192.168.123.76",
+		"port": 22,
+		"username": "root",
+		"password": "U40KpqZg9Qvt7",
+		"privateKey": "",
+		"keyPassphrase": "",
+		"root": "/var/www/slide/touchscreen",
+		"keepaliveInterval": 3000,
+		"debug": false,
+		"fileMode": "",
+		"sshGateway": null
+	}
+}

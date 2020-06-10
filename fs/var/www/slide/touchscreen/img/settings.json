@@ -1,0 +1,15 @@
+{
+"URL": "http://10.124.64.2/slide/gui/spinetix.php",
+"mainscreenbackground": "img/background.png",
+"photoshoot": false,
+"theme1": "Jungle",
+"theme2": "Party",
+"theme3": "Kids",
+"theme4": "Movie",
+"text_yes": "Yes",
+"text_no": "No",
+"text_permission": "I hereby give permission to have my photo taken",
+"text_legal": "If you are under 16 you can only press 'yes' if you have permission from one of your parents or legal guardian, your photo will only be visable for a short period of time",
+"text_find": "Find your picture on the screen below when you leave the slide",
+"text_success": "HAVE FUN!"
+}

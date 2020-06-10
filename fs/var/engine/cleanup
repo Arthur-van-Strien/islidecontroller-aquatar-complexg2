@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cd /var/www/slide/snapshots/
+find -type f -not -newermt '-60 seconds' -name "*.jpg" -delete

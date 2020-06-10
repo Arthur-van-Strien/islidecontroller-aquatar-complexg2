@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>iSlide</title>
+    <meta name="viewport" content="width=device-width,height=device-height, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/layoutmain.css" />
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/command.js"></script>
+</head>
+<body>
+    <img id="mainbackground" class="main-screen-background" src="img/background.png"/>
+    <div id="btn-theme1" class="btn-theme-1"></div>
+    <div id="companylogo" class="company-logo"></div>
+    <div id="btn-theme2" class="btn-theme-2"></div>
+    <div id="btn-theme3" class="btn-theme-3"></div>
+    <div id="btn-theme4" class="btn-theme-4"></div>
+    <div id="text-theme1" class="text-theme-1"></div>
+    <div id="text-theme2" class="text-theme-2"></div>
+    <div id="text-theme3" class="text-theme-3"></div>
+    <div id="text-theme4" class="text-theme-4"></div>
+    <script>
+        $(document).ready(function() {
+            
+            //lets first set the background
+            $.getJSON("img/settings.json", function(json) {
+                        console.log("grabing JSON");
+                        console.log(json.mainscreenbackground);
+                        document.getElementById("mainbackground").src = json.mainscreenbackground; 
+            });
+
+            //read the settings and overrule the onclick handlers for all buttons when photoshoot has value false
+            //call the sendselectedTheme function manualy and use only 12 - 22 - 32 - 42 as param because those are the themes without picture
+            $.getJSON("img/settings.json", function(json) {
+                if(json.photoshoot == false)
+                {
+                    console.log("photoshoot: false");
+                    $('#btn-theme1').attr("onclick","localStorage.setItem('selectedTheme','theme1'); sendDirectTheme(12);");
+                    $('#btn-theme2').attr("onclick","localStorage.setItem('selectedTheme','theme2'); sendDirectTheme(22);");
+                    $('#btn-theme3').attr("onclick","localStorage.setItem('selectedTheme','theme3'); sendDirectTheme(32);");
+                    $('#btn-theme4').attr("onclick","localStorage.setItem('selectedTheme','theme4'); sendDirectTheme(42);");
+                }
+                else
+                {
+                    console.log("photoshoot: true");
+                    $('#btn-theme1').attr("onclick","location.href='themes/theme1.html'; localStorage.setItem('selectedTheme','theme1');");
+                    $('#btn-theme2').attr("onclick","location.href='themes/theme2.html'; localStorage.setItem('selectedTheme','theme2');");
+                    $('#btn-theme3').attr("onclick","location.href='themes/theme3.html'; localStorage.setItem('selectedTheme','theme3');");
+                    $('#btn-theme4').attr("onclick","location.href='themes/theme4.html'; localStorage.setItem('selectedTheme','theme4');");
+                }
+            });
+
+            $.getJSON("img/settings.json", function(json) {
+                $("#text-theme1").html(json.theme1);
+                $("#text-theme2").html(json.theme2);
+                $("#text-theme3").html(json.theme3);
+                $("#text-theme4").html(json.theme4);
+            });
+        });
+    </script>
+</body>
+</html>

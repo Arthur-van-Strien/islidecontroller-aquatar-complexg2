@@ -1,0 +1,8 @@
+# /etc/cron.d/syncsliders: crontab fragment for islidecontroller
+#  This pushes slider data to global server on an hourly interval
+#
+
+# Run at 0300
+# Minute  Hour    Day of Month  Month              Day of Week       User  Command    
+# (0-59)  (0-23)  (1-31)        (1-12 or Jan-Dec)  (0-6 or Sun-Sat)                
+   0       *       *             *                  *                 root  /root/syncsliders.py

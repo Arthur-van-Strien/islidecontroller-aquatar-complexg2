@@ -1,0 +1,27 @@
+CACHE MANIFEST
+#v2 - 09-05-2018
+#change line above to reload manifest cache list
+
+CACHE:
+img/background.gif
+img/background.jpg
+img/button-1.png
+img/button-2.png
+img/button-3.png
+img/button-4.png
+img/button-yes.png
+img/button-no.png
+img/companylogo
+themes/succes.html
+themes/theme1.html
+themes/theme2.html
+themes/theme3.html
+themes/theme4.html
+css/layoutsucces.css
+css/layouttheme.css
+js/command.js
+js/jquery-3.3.1.js
+js/parser.js
+
+NETWORK:
+*
