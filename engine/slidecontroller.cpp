@@ -431,6 +431,9 @@ void stateInitExit() {
 }
 
 void stateStartEnter() {
+
+        scSensors[SENSOR_IN].state(false); // unblock
+
 #ifdef FEATURE_EMERGENCY_BUTTON
 //	if (scSensors[SENSOR_EMERGENCY].state(true)) {
 //		SC_DEBUG("slidecontroller.cpp/stateStartUpdate(): EMERGENCY MODE\n");

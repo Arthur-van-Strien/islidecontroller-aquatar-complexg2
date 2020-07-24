@@ -3,18 +3,18 @@
 
 #define VERSION_NUMBER "2.1"
 #define VERSION_YEAR 2017
-#define LIB_VERSION "1.8"
+#define LIB_VERSION "1.9"
 #define INCLUDE_PATH "~/git/islidecontroller/common/"LIB_VERSION"/var/engine" // @@@ Is this used?
-#define SLIDE_CONFIG_NIEUWVLIETBAD
+#define SLIDE_CONFIG_AQUATAR_COMPLEXG2
 // ----- Edit slide parameters below ----- 
 
-#ifdef SLIDE_CONFIG_NIEUWVLIETBAD
+#ifdef SLIDE_CONFIG_AQUATAR_COMPLEXG2
 // Debug
 #define DO_DEBUG
 //#define TEST_ALWAYS_PHOTO // @@@
 
 //*** Generic and timing. ***
-#define VERSION_NAME "Nieuwvlietbad"
+#define VERSION_NAME "Aquatar, Complex G2, Qatar"
 
 //#define FEATURE_CUECORE
 #ifdef FEATURE_CUECORE
@@ -40,8 +40,8 @@
 
 //#define FEATURE_RFID
 //#define FEATURE_CAMERASENSOR
-#define SLIDE_MODE_AQUASMASH
-#define SLIDE_MODE_WHITEMAGIC
+//#define SLIDE_MODE_AQUASMASH
+//#define SLIDE_MODE_WHITEMAGIC
 //#define FEATURE_RANDOMSHOW
 //#define SLIDE_MODE_SLIDECHAMP
 #define SLIDE_MODE_SENSOR // @@@ detect from inputs
@@ -49,14 +49,14 @@
 #define TIME_SLIDE_INIT 10000 // Time needed to start pumps etc.
 #define TIME_SLIDE_AVG 10000 // Set only average slide time in most cases
 #define TIME_SLIDE_MIN 5000
-#define TIME_SLIDE_MAX 150000
+#define TIME_SLIDE_MAX 60000
 #define TIME_PHOTODELAY 750 //500 //ms // @@@
 #define TIME_SLIDE_EXIT 3000
 #define SLIDE_LENGTH 29		// Length of the slide (m) to calculate speed
 #define SPEED_WEIGHT 10
 #define FEATURE_EMERGENCY_BUTTON
-#define FEATURE_RANDOMSHOW
-#define FEATURE_ALWAYSSOUND
+//#define FEATURE_RANDOMSHOW
+//#define FEATURE_ALWAYSSOUND
 
 //#define FEATURE_API
 
@@ -74,7 +74,7 @@
 #define EDX_ID_1 1 // id used for init
 
 //*** GUI ***
-#define FEATURE_GUI // touchscreen
+//#define FEATURE_GUI // touchscreen
 
 #ifdef FEATURE_GUI
 #define FEATURE_TOUCHSCREEN
@@ -108,9 +108,12 @@
 #define IO_BUTTONS_TYPE IO_TYPE_SOLLAE
 #undef IO_BUTTON1_RANDOM
 #endif
-#define FEATURE_COUNTDOWNLIGHT
+
+//#define FEATURE_COUNTDOWNLIGHT
+#ifdef FEATURE_COUNTDOWNLIGHT
 #define IP_CDL "10.124.64.65"
 #define CDL_SLIDE 1 // id CountDownLight
+#endif
 
 //#define FEATURE_SCORESCREEN
 #ifdef FEATURE_SCORESCREEN
@@ -124,7 +127,7 @@
 
 // Sensors
 // Sensors
-#define IP_IO_SENSORS_1 "10.124.64.113"
+#define IP_IO_SENSORS_1 "10.124.73.113"
 #define IP_ETHDMX_1 IP_IO_SENSORS_1
 #define SENSOR_MAX 40
 #define EDX_SLIDE 1
@@ -168,7 +171,7 @@
 #endif
 
 // Soundboxes
-#define FEATURE_MP3
+//#define FEATURE_MP3
 #ifdef FEATURE_MP3
 #define IP_SB_1 "10.124.64.81"
 #define MPD_SLIDE 1 // id
@@ -181,7 +184,7 @@
 
 #define DMX_SHOW_LAMPS 40 // dmx range = 40 x 3 ch = 1 - 120
 
-#define FEATURE_DISPLAYBOARD
+//#define FEATURE_DISPLAYBOARD
 #ifdef FEATURE_DISPLAYBOARD
 #define DMX_BASE_DISPLAY 193
 

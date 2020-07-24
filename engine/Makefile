@@ -1,5 +1,5 @@
 
-LIBSCVER=1.8
+LIBSCVER=1.9
 
 # Files
 SOURCES=slidecontroller.cpp
